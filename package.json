@@ -1,13 +1,13 @@
 {
-    "name": "eslint-plugin-tiger",
-    "version": "0.0.0",
+    "name": "eslint-plugin-tiger-rules",
+    "version": "1.0.0",
     "description": "inner rules",
     "keywords": [
         "eslint",
         "eslintplugin",
         "eslint-plugin"
     ],
-    "author": "tiger-rules",
+    "author": "rabbxu",
     "main": "lib/index.js",
     "scripts": {
         "test": "mocha tests --recursive"
@@ -22,5 +22,6 @@
     "engines": {
         "node": ">=0.10.0"
     },
+    "email": "327332260@qq.com",
     "license": "MIT"
 }

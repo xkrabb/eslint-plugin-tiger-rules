@@ -10,12 +10,11 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-tiger`:
+Next, install `eslint-plugin-tiger-rules`:
 
 ```
-$ npm install eslint-plugin-tiger --save-dev
+$ npm install eslint-plugin-tiger-rules --save-dev
 ```
-
 
 ## Usage
 
@@ -23,28 +22,20 @@ Add `tiger` to the plugins section of your `.eslintrc` configuration file. You c
 
 ```json
 {
-    "plugins": [
-        "tiger"
-    ]
+    "plugins": ["tiger-rules"]
 }
 ```
-
 
 Then configure the rules you want to use under the rules section.
 
 ```json
 {
     "rules": {
-        "tiger/rule-name": 2
+        "tiger-rules/rule-name": 2
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
-
-
-
-
-
+-   Fill in provided rules here
