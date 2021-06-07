@@ -23,10 +23,28 @@ ruleTester.run('ban-ts-ignore', rule, {
     ],
     invalid: [
         {
-            code: '// @ts-ignore',
+            code: `// @ts-ignore`,
             errors: [
                 {
-                    message: 'must without ts-ignore',
+                    message: '@ts-ignore is not allow',
+                    type: 'Program'
+                }
+            ]
+        },
+        {
+            code: `function http(data){
+                    // @ts-ignore
+                    var res = data();
+                    // @ts-ignore
+                    return res
+            }`,
+            errors: [
+                {
+                    message: '@ts-ignore is not allow',
+                    type: 'Program'
+                },
+                {
+                    message: '@ts-ignore is not allow',
                     type: 'Program'
                 }
             ]
